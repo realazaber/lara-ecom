@@ -4,35 +4,26 @@
 		Dashboard
 	</x-slot>
 
-	<span>Welcome to dashboard</span>
 
-	<div class="collapse collapse-plus bg-base-200">
-		<input type="radio" name="my-accordion-3" checked="checked"/>
-		<div class="collapse-title text-xl font-medium">
-			Click to open this one and close others
+	<div class="flex flex-col sm:flex-row sm:gap-x-2 gap-y-2">
+		<div class="card w-full sm:w-1/3 bg-green-500 shadow-xl">
+			<div class="card-body text-white">
+				<h2 class="card-title">Manage Products</h2>
+				<span>23 Products ordered</span>
+			</div>
 		</div>
-		<div class="collapse-content">
-			<p>hello</p>
+		<div class="card w-full sm:w-1/3 bg-yellow-500 shadow-xl">
+			<div class="card-body">
+				<h2 class="card-title">Manage Orders</h2>
+			</div>
 		</div>
-	</div>
-	<div class="collapse collapse-plus bg-base-200">
-		<input type="radio" name="my-accordion-3"/>
-		<div class="collapse-title text-xl font-medium">
-			Click to open this one and close others
-		</div>
-		<div class="collapse-content">
-			<p>hello</p>
-		</div>
-	</div>
-	<div class="collapse collapse-plus bg-base-200">
-		<input type="radio" name="my-accordion-3"/>
-		<div class="collapse-title text-xl font-medium">
-			Click to open this one and close others
-		</div>
-		<div class="collapse-content">
-			<p>hello</p>
+		<div class="card w-full sm:w-1/3 bg-red-500 shadow-xl">
+			<div class="card-body">
+				<h2 class="card-title">Manage Users</h2>
+			</div>
 		</div>
 	</div>
+
 
 </x-app-layout>
 

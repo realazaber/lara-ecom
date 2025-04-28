@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="corporate">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="csrf-token" content="{{ csrf_token() }}">
 
-		<title>{{ config('app.name', 'Laravel') }}</title>
+		<title>Lara Ecom |
+			{{ $title ?? '' }}
+		</title>
 
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.bunny.net">
@@ -20,16 +22,18 @@
 
 			<!-- Page Heading -->
 			@isset($header)
-                <header class="bg-white shadow">
-                    <div
-                        class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">{{ $header }}
-                    </div>
-                </header>
-            @endisset
+				<header class="bg-white shadow">
+					<div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+						<h2
+							class="header-title">{{ $header }}
+						</h2>
+					</div>
+				</header>
+			@endisset
 
 			<!-- Page Content -->
-			<main>
-				{{ $slot }}
+			<main
+				class="w-3/5 p-3 my-3 rounded-md shadow-md">{{ $slot }}
 			</main>
 		</div>
 	</body>
