@@ -6,10 +6,29 @@
 
     p, span, h1, h2, h3, h4, h5, h6 {
         @apply text-slate-800;
+
+        .header-title {
+            @apply font-semibold text-xl text-gray-800 leading-tight bg-red-500;
+        }
+    }
+
+    .card {        
+        .card-body {            
+            .card-title {
+                @apply text-white;
+            }
+            span {
+                @apply text-white font-bold mt-auto;
+            }
+        }
+    }
+
+    .collapse {
+        @apply my-1;
     }
 
     main {
-        @apply bg-white w-4/5 mx-auto;
+        @apply bg-white w-4/5 mx-auto min-h-[80vh];
     }
 
     .btn {
